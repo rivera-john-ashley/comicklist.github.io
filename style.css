@@ -1,0 +1,330 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7c7979;
+}
+
+header {
+    background: #333333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.brand-list {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    list-style-type: none; 
+    margin: 0;
+}
+
+.brand-list li {
+    overflow: hidden; 
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.brand-list img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
+.brand-list li:hover {
+    transform: scale(1.1); 
+}
+
+.bike {
+    border-image-width: 50%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    max-width: 800px; 
+    margin: auto; 
+}
+
+.img {
+    position: relative;
+    width: calc(33.33% - 10px);
+    height: 400px; 
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7) saturate(0.2) contrast(1) blur(2px);
+    border-radius: 20px;
+    transition: flex 0.3s, filter 0.3s;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; 
+    border: 1px solid #8d9da9;
+}
+
+.img:hover {
+    flex: 1.5;
+    filter: none;
+}
+
+.img span {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.img:hover span {
+    bottom: 20px;
+}
+
+.img1 {
+    background-image: url("solo\ leveling.jpg");
+}
+
+.img2 {
+    background-image: url("lookism.jpg");
+}
+
+.img3 {
+    background-image: url("arthur.png");
+}
+
+.img4 {
+    background-image: url("TSUNAMI\ SNM300.jpg");
+}
+
+.img5 {
+    background-image: url("aventon.jpg.jpg");
+}
+
+.img6 {
+    background-image: url("ARENA.jpg");
+}
+.logo {
+    height: auto;
+    width: 150px;
+    margin-right: 20px; 
+}
+
+.contact-details {
+    margin-bottom: 50px;
+}
+
+.contact-details h3 {
+    margin-bottom: 10px;
+    color: #010102; 
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #020101; 
+}
+
+.contact-form {
+    background-color: lightgray;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    margin-top: 0;
+    color: #333; 
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold; 
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px; 
+    margin-bottom: 15px;
+    border: 1px solid #4d4949;
+    border-radius: 4px;
+    transition: border-color 0.3s; 
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF; 
+    outline: none; 
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; 
+}
+
+.contact-form button:active {
+    background-color: #004494; 
+}
+
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: #fff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px; /* Padding inside the container */
+    margin: 20px; /* Margin around the container */
+}
+
+h1 {
+    color: #0a0b0c; /* Dark color for the heading */
+    font-size: 2.5em; /* Large font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+p {
+    font-size: 1.2em; /* Slightly larger font size for paragraphs */
+    color: #0c0a0a; /* Dark color for the paragraph text */
+    margin: 10px 0; /* Space above and below paragraphs */
+}
+
+/* Optional: Add styles for the link/button */
+a {
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 12px 25px; 
+    font-size: 1.1em; 
+    color: white; 
+    background-color: rgb(85, 77, 77); 
+    text-align: center; /* Center text in the button */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    background-color: rgb(68, 64, 64); /* Darker shade for hover effect */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust base font size for mobile */
+    }
+
+    header {
+        padding: 15px 0; /* Reduce padding in header */
+    }
+
+    a {
+        font-size: 1em; /* Adjust link/button font size */
+        padding: 10px 20px; /* Adjust padding for buttons */
+    }
+
+    .brand-list {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+
+    .img {
+        width: calc(50% - 10px); /* Adjust width for images */
+        height: 300px; /* Reduce height for mobile */
+    }
+
+    .container {
+        max-width: 100%; /* Full width for container */
+        padding: 0 10px; /* Add padding to container */
+    }
+
+    .contact-form {
+        padding: 20px; /* Reduce padding in contact form */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px; /* Adjust padding for inputs */
+    }
+
+    .contact-form button {
+        padding: 10px; /* Adjust button padding */
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce heading size */
+    }
+
+    p {
+        font-size: 1em; /* Reduce paragraph size */
+    }
+
+    a {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 1em; /* Adjust font size for links */
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-list {
+        grid-template-columns: 1fr; /* Change to 1 column for very small screens */
+    }
+
+    .img {
+        height: 250px; /* Further reduce height for very small screens */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Further reduce heading size */
+    }
+
+    p {
+        font-size: 0.9em; /* Further reduce paragraph size */
+    }
+}
